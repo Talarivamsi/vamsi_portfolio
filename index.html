@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ea32ebbb4a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/vamsilogo.jpg" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Data Analytics Enthusiast</p>
+          <h1>Hi, I'm <span>Vamsi</span><br />From India</h1>
+        </div>
+      </div>
+    </div>
+    <!---- ...............about..........................---->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user_final-transformed.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am Vamsi, a Computer Science and Engineering student
+              specializing in Big Data Analytics. With a strong foundation in C,
+              C++, and Python, I have developed a keen interest in the
+              intersection of data and technology. My expertise extends to web
+              development and machine learning with Python, where I've worked on
+              projects that blend creativity with analytical thinking. My
+              passion for data-driven solutions and my commitment to continuous
+              learning drive me to explore new technologies and methodologies,
+              positioning myself as a versatile and adaptive professional in the
+              tech industry.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links active-link" onclick="opentab('Projects')">
+                projects
+              </p>
+              <p class="tab-links active-link" onclick="opentab('education')">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Desinging Web interfaces</li>
+                <li><span>Web development</span><br />Web app development</li>
+                <li><span>Computer languages</span><br />C,C++,Python</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Projects">
+              <ul>
+                <li>Weather Detection using Machine Learning</li>
+                <li>
+                  Brain Tumor Detection using<br />
+                  Machine Learning and Deep Learning
+                </li>
+                <li>Network Traffic Analyzer</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>10th GPA</span><br />9.8/10</li>
+                <li><span>12 marks</span><br />962/1000</li>
+                <li><span>current CGPA</span><br />9.03</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--...............my services..............-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">my services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            <h2>Data Analysis and Visualization</h2>
+            <p>
+              Create visually appealing and informative dashboards using tools
+              like Tableau, Power BI, or Matplotlib.
+            </p>
+            <a
+              href="https://www.geeksforgeeks.org/difference-between-data-visualization-and-data-analytics/"
+              >Learn more</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-gear"></i>
+            <h2>Machine Learning Model Development</h2>
+            <p>
+              Design and implement machine learning models for predictive
+              analytics, classification, clustering, and more.
+            </p>
+            <a
+              href="https://savvycomsoftware.com/blog/what-is-machine-learning-development/"
+              >Learn more</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Create responsive web applications with integrated data analytics
+              for real-time insights, ensuring seamless functionality and
+              user-friendly design.
+            </p>
+            <a href="https://www.geeksforgeeks.org/web-development/"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--..................portfolio.....................-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/woork1.jpg" />
+            <div class="layer">
+              <h3>Machine Learning With Python</h3>
+              <p>I have completed machine learning with python in coursera</p>
+              <a
+                href="https://coursera.org/share/f364c1dc473901f1b9f0979a3394c117"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/woork2.jpg" />
+            <div class="layer">
+              <h3>Azure Data Fundamentals</h3>
+              <p>I have completed microsoft Azure Data fundamentals</p>
+              <a
+                href="https://learn.microsoft.com/en-us/training/courses/dp-900t00"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/wooork3.jpg" />
+            <div class="layer">
+              <h3>Web development</h3>
+              <p>I have completed 63 hours web development bootcamp in udemy</p>
+              <a
+                href="https://www.udemy.com/certificate/UC-08c2377a-133a-40c6-a3db-737fc054e14e/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!--.......................contact.......................-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1>Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>talarivamsi52@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>6302341073</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/talari-vamsi-980a7323a/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/Talarivamsi"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.hackerrank.com/profile/tv6676"><i class="fa-brands fa-hackerrank"></i></a>
+              <a href="https://www.codechef.com/users/srmist_0198"><i class="fa-solid fa-code"></i></i></a>
+            </div>
+            <a href="images/TALARI VAMSI CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxLNy9DM3GkvSH1vMqftMDgVxOPMWLDdBnLil6KT8I36cmsXWgPExDOJtXo_HDoCuvE/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message)) // Corrected placement of .catch
+    })
+  </script>
+  
+  </body>
+</html>
